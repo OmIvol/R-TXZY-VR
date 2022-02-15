@@ -56,8 +56,8 @@ module.exports = {
           if (!isNumber(user.dailyReward)) user.dailyReward = 0
         } else global.db.data.users[m.sender] = {
           exp: 0,
-          limit: 10,
-          registered: false,
+          limit: 20,
+          registered: true,
           lastclaim: 0, 
           name: this.getName(m.sender),
           age: -1,
